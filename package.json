@@ -1,0 +1,17 @@
+{
+    "name": "project03",
+    "version": "3.0.0",
+    "description": "Second Chance Center",
+    "main": "main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Cuba",
+    "license": "ISC",
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "file:../../modules/fontawesome",
+      "bootstrap": "file:../../modules/bootstrap",
+      "jquery": "file:../../modules/jquery"
+    }
+  }
+  

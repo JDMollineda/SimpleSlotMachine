@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;    
+}
+
+.body-flash {
+    background-image: url(../images/BG1.jpg);
+    background-size: cover;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+.lines-output output {
+    width: 60vw;
+    height: 15vh;
+    background: whitesmoke;
+    font-size: 10vh;
+    font-family: "Courier New", Courier, monospace;
+    pointer-events: none;
+}
+
+input {
+    height: 3rem;
+    width: 80%;
+}
+
+button {
+    height: 3rem;
+    background-color: transparent;
+}
+
+.deposit-amount {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h6 {
+    width: 5rem;
+}
+
+.decision button {
+    width: 20rem;
+    height: 10rem;
+    font-size: 3rem;
+}
+
+.info-box output {
+    width: 10rem;
+    height: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2vh;
+    pointer-events: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-text {
+    font-size: 10vh;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#main-screen {
+    color: black;
+    width: 100vw;
+    height: 30vh;
+    font-size: 5vh;
+}
+
+img {
+    height: 10%;
+}
+
+// Bubbles
+.section {
+    // position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section span {
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: animate 4s linear infinite;
+    z-index: -1;
+}
+
+.section span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background: radial-gradient(#fff, transparent);
+    border-radius: 50px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200%);
+        opacity: 1;
+    }
+}
+
+.screen-animation {
+    // transition: all 0.3s linear;
+    animation: spin 100ms linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(-100%);        
+    }   
+    100% {
+        transform: translateX(100%);       
+    }
+}
+
+#cash {
+    color: rgb(53, 50, 50);
+}
+
+#cash:hover {
+    color: red;
+    background-color: black;
+}
+
+input {
+    background-color: transparent;
+    color: greenyellow;
+}
+
+input:hover {
+    background-color: white;
+}
